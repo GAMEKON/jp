@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ゲームコン</title>
+  
+  <subtitle>簡潔で、精巧である</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jp.gamekon.com/"/>
+  <updated>2018-06-10T04:08:41.390Z</updated>
+  <id>https://jp.gamekon.com/</id>
+  
+  <author>
+    <name>ゲームコン</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cocos Creator v2.0.0 Preview 発行する</title>
+    <link href="https://jp.gamekon.com/2018/06/10/Cocos-Creator-v2-Preview.html"/>
+    <id>https://jp.gamekon.com/2018/06/10/Cocos-Creator-v2-Preview.html</id>
+    <published>2018-06-10T02:52:06.066Z</published>
+    <updated>2018-06-10T04:08:41.390Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="気をつけなさい"><a class="markdownIt-Anchor" href="#気をつけなさい"></a> <strong>気をつけなさい</strong></h2><p>5月の最後の2時間にcocos creator v2. 0のリリースを準備しました。 楽しんで！ 興奮しました！<br>何が更新されたかについてです このようにしてもよい。 このようにしてもよい。 私は、変更が大きすぎるので、何から話しているか分からないと言うことしかできません。 一言で言えば、コンポーネント層APIが不変であることを保証するために、我々は底層を完全に書き換えたが、cocos creator v2. 0以降、cocos2d xのフレームワークから完全に再生され、古いcocosの影が見えなくなり、たとえば1.x時代のsgnodeが完全に見えなくなった。 現在、v2. 0を直接使用すると、多くの警告やエラーが発生します。通常、古いAPIを使用しているため、これらのAPIには詳細なエラーが表示されます。これらのAPIには、アップグレード方法や交換方法などが含まれています。すべてのエラー情報に注意してください。 アップグレードが完了すると、v2. 0のパフォーマンスが向上しているはずですが、実際にはv2. 0には多くの驚きが用意されています。 ここではまず申し訳ありませんが、テクニカルプレビューバージョンの準備が急がれているため、すべてのドキュメントを準備することはできません。これらの作業は、正式版がリリースされる前に完全に実行されるため、v2. 0の可能性を最大限に引き出すことができます。<br>最も重要なのは、プロジェクトをバックアップして、両手を制御できないようにしてください。</p><h2 id="バージョンの更新"><a class="markdownIt-Anchor" href="#バージョンの更新"></a> <strong>バージョンの更新</strong></h2><p>cocos creator v2.0.0 preview 4を更新: <a href="http://download.cocos.com/CocosCreator/beta/CocosCreator_v2.0.0-preview.4_20180608.dmg" rel="external nofollow noopener noreferrer" target="_blank">MACバージョンのダウンロード</a> | <a href="http://download.cocos.com/CocosCreator/beta/CocosCreator_v2.0.0-preview.4.7z" rel="external nofollow noopener noreferrer" target="_blank">windowsバージョンのダウンロード</a> (2018/6/8)</p><ul><li>[FEATURE] 新規ノードアルファカスケード</li><li>[MODIF] 必要に応じてゲームの重力を検知</li><li>[MODIF] editboxのプラットフォーム依存コードをプラットフォーム依存builtinモジュールに移動</li><li>[FIX] 回復prefabがオフのときにシーンを回復することによるエラー</li><li>[FIX] prefab内部のアニメーションを編集しているときに、別のprefabをダブルクリックして開くとハングアップする問題を修正します。</li><li>[FIX] sprite fill typeがradialの場合にfill centerを編集できない問題を修正します。</li><li>[FIX] 修正ノードanchorを修正した後、元に戻す修正による表示エラーを元に戻す</li><li>[FIX] tilemapに空のlayerが含まれている場合にエラーとなる問題の修正</li><li>[FIX] DOM関連コンポーネントイベントリスナによるメモリリークの問題の修正</li><li>[FIX] maskコンポーネントの切り替えモードおよび再有効化時に発生する継続的なエラーの修復</li><li>[FIX] 隣接するmaskが誤ってバッチ処理される問題を修正します。</li><li>[FIX] active状態更新後のworldtransformエラーの修正</li><li>[FIX] auto remove on finishによってパーティクルノードがエディタに表示されなくなる問題を修正します。</li><li>[FIX] exampleエンジニアリングメインインタフェースのテストボタンの表示ブレを修正</li><li>[FIX] editboxの表示残り問題を修正</li><li>[FIX] 複数のレンダリングコンポーネントをノードの下に追加する際のエラーの問題を修正します。</li><li>[FIX] bmfont labelの色が設定できない問題を修正する</li><li>[FIX] labeloutline透明度がノードの透明度に影響されない問題の修正</li><li>[FIX] アンドロメダゲームプラットフォームの重力感知イベントの修正</li><li>[FIX] spriteコンポーネントslicedモードのレンダリング問題の修正</li><li>[FIX] spriteコンポーネントgraystateが原因で発生するglwarningの問題の修正</li><li>[FIX] preabを編集した後にシーンに戻ると、シーンが無効になる問題を修正します。</li><li>[FIX] 画面の向きがデバイスの向きと異なる場合のacclerometerイベントの軸エラーの修正</li><li>[FIX] ノードイベントのtargetとcurrenttargetの問題を修正する</li></ul><h2 id="関連リソース"><a class="markdownIt-Anchor" href="#関連リソース"></a> <strong>関連リソース</strong></h2><p><a href="https://github.com/pandamicro/heartfelt" rel="external nofollow noopener noreferrer" target="_blank">Material 使用例</a></p><h2 id="release-notes"><a class="markdownIt-Anchor" href="#release-notes"></a> <strong>RELEASE NOTES</strong></h2><p><strong>プラットフォームのサポート</strong><br>Cocos Creator v2.0.0 Preview はテクノロジプレビュー版であり、現在はすべてのプラットフォームがサポートされていません。サポートされているプラットフォームを次に示します。</p><p>Web（WebGL レンダリング）<br>Wechat ミニゲーム</p><p><strong>リソースのアップグレード</strong><br>v2. 0はv1. 10のすべての変更を統合し、v1. 10は基本的なリソースタイプを再構築しました。ほとんどのプロジェクトは影響を受けませんが、一部のプロジェクトには警告が表示される場合があります。詳細については、<a href="http://docs.cocos.com/creator/manual/zh/release-notes/raw-asset-migration.html" rel="external nofollow noopener noreferrer" target="_blank">v1. 10リソースアップグレードガイド</a>を参照してください。</p><p><strong>エディタ</strong><br>textureのpremultiply alpha、filter mode、wrap mode構成を実装<br>カスタムエンジンは、メニューの「開発者オプション」-&gt;「コンパイルエンジン」を使用するだけで数秒で簡単にコンパイルできます。</p><p><strong>エンジン</strong><br>レンダリングツリーを完全に削除する<br>3d rendererベースの新しいレンダラーを追加する<br>レンダリングコンポーネントの完全なアップグレード<br>cameraアセンブリのアップグレード<br>カスタムレンダリングコンポーネント機能を追加する(ドキュメントは公開されていません。公式リリースより前に公開されています)<br>rendertextureリソースタイプが正式に追加されました。rendertextureを使用してスクリーンキャストを完了する方法については、example casesのrender _ to _ canvasおよびrender _ to _ spriteテストケースを参照してください。</p><p><strong>削除・廃止</strong><br>v1. xの多数の非公開APIおよび非コアAPIは削除または破棄され、詳細は<a href="https://gigthub.com/cocos-creator/engine/blob/next/cocos2d/deprecated.js" rel="external nofollow noopener noreferrer" target="_blank">deprecated.js</a>を参照してください。</p><h2 id="パフォーマンスとフレームワーク"><a class="markdownIt-Anchor" href="#パフォーマンスとフレームワーク"></a> <strong>パフォーマンスとフレームワーク</strong></h2><p><strong>性能の進化</strong><br>v2. 0以降では、v1.8.2( v1. x以降のバージョンではパフォーマンスの最適化なし)とv2. 0のパフォーマンスを比較したベンチマークを作成しました。<br><img src="/2018/06/10/cocos-creator-v2-preview/1.jpg" alt="パフォーマンスの比較"></p><p><strong>フレームワークの進化</strong><br>v2. 0のシンプルな2つのアーキテクチャ図とv1. xとの比較をご紹介します。<br><img src="/2018/06/10/Cocos-Creator-v2-Preview/2.jpg" alt="1.x ノードツリー"><br><img src="/2018/06/10/Cocos-Creator-v2-Preview/3.jpg" alt="2.0 ノードツリー"><br><img src="/2018/06/10/Cocos-Creator-v2-Preview/4.jpg" alt="2.0 レンダリングフレーム"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;気をつけなさい&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#気をつけなさい&quot;&gt;&lt;/a&gt; &lt;strong&gt;気をつけなさい&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;5月の最後の2時間にcocos creator v2. 0のリリースを準備しまし
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="ニュース" scheme="https://jp.gamekon.com/tags/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/"/>
+    
+      <category term="Cocos Creator" scheme="https://jp.gamekon.com/tags/Cocos-Creator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>お気に入りのソフトウェアを共有して</title>
+    <link href="https://jp.gamekon.com/2018/05/10/some-software-i-use.html"/>
+    <id>https://jp.gamekon.com/2018/05/10/some-software-i-use.html</id>
+    <published>2018-05-10T02:24:13.826Z</published>
+    <updated>2018-05-10T02:28:28.785Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>頻繁に使用するスクリプトやソフトウェアもありますが、うまく機能しない場合があります。そのため、これらのスクリプトやソフトウェアを修正して使いやすくしました。<br>私の成果をお見せしましょう。</p></blockquote><h3 id="tampermonkey-プログラムスクリプト"><a class="markdownIt-Anchor" href="#tampermonkey-プログラムスクリプト"></a> <strong>Tampermonkey プログラムスクリプト</strong></h3><ul><li><a href="https://github.com/GAMEKON/drag_translation" rel="external nofollow noopener noreferrer" target="_blank">翻訳ソフト</a></li><li><a href="https://github.com/GAMEKON/soTab_plusplus" rel="external nofollow noopener noreferrer" target="_blank">検索エンジンジャンプ</a></li><li><a href="https://github.com/GAMEKON/AssetStore-Linkify" rel="external nofollow noopener noreferrer" target="_blank">Unity AssetStore リンクプレビュー</a></li></ul><h3 id="ソフトウェア"><a class="markdownIt-Anchor" href="#ソフトウェア"></a> <strong>ソフトウェア</strong></h3><ul><li><a href="https://github.com/GAMEKON/sublime_text_3.1-3170-" rel="external nofollow noopener noreferrer" target="_blank">sublime_text.exe</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;頻繁に使用するスクリプトやソフトウェアもありますが、うまく機能しない場合があります。そのため、これらのスクリプトやソフトウェアを修正して使いやすくしました。&lt;br&gt;
+私の成果をお見せしましょう。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="共有" scheme="https://jp.gamekon.com/tags/%E5%85%B1%E6%9C%89/"/>
+    
+      <category term="ソフトウェア" scheme="https://jp.gamekon.com/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>オープンソースのインテリジェントゲーム</title>
+    <link href="https://jp.gamekon.com/2018/05/01/open-source-smart-sudoku.html"/>
+    <id>https://jp.gamekon.com/2018/05/01/open-source-smart-sudoku.html</id>
+    <published>2018-05-01T01:56:29.558Z</published>
+    <updated>2018-05-01T02:03:36.094Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/05/01/open-source-smart-sudoku/main.png" alt="sudoku" title="sudoku"></p><p><a href="https://github.com/GAMEKON/NewSudoku_beta" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/GAMEKON/NewSudoku_beta</a> オープンソースです。</p><p><strong>MIT License</strong></p><h2 id="機能"><a class="markdownIt-Anchor" href="#機能"></a> 機能:</h2><ul><li><p>ゲームの進行状況の保存/ロード</p></li><li><p>易/中/難/マクロ難度の4つの選択肢</p></li><li><p>リアルタイムで自動的に生成されるか、ロード用に保存されます。</p></li><li><p>画面解像度フィット( screen resolution fit )、モバイルデバイス回転フィット( mobile device rotation fit )</p></li><li><p>解問システム( 1、プレイヤのエラーデータを訂正する； 2 .必要に応じて、候補数を自動的に表示します。 3、解答過程を与える)</p></li></ul><a id="more"></a><h2 id="スクリーン回転方向のフィット-screen-rotation-orientation-fit"><a class="markdownIt-Anchor" href="#スクリーン回転方向のフィット-screen-rotation-orientation-fit"></a> スクリーン回転方向のフィット( screen rotation orientation fit )</h2><p><img src="/2018/05/01/open-source-smart-sudoku/screen_fit_1.gif" alt="screen fit" title="screen fit"><br><img src="/2018/05/01/open-source-smart-sudoku/screen_fit_2.gif" alt="screen fit" title="screen fit"></p><p>コードベースsudokuJS<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。<br>cocos creatorに合わせて少し変更を加えました。</p><p>批判の指摘を歓迎する。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item">https://github.com/pocketjoso/sudokuJS/blob/master/sudokuJS.js <a href="#fnref1" class="footnote-backref">↩︎</a></li></ol></section>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/05/01/open-source-smart-sudoku/main.png&quot; alt=&quot;sudoku&quot; title=&quot;sudoku&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/GAMEKON/NewSudoku_beta&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://github.com/GAMEKON/NewSudoku_beta&lt;/a&gt; オープンソースです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MIT License&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;機能&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#機能&quot;&gt;&lt;/a&gt; 機能:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ゲームの進行状況の保存/ロード&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;易/中/難/マクロ難度の4つの選択肢&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;リアルタイムで自動的に生成されるか、ロード用に保存されます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;画面解像度フィット( screen resolution fit )、モバイルデバイス回転フィット( mobile device rotation fit )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解問システム( 1、プレイヤのエラーデータを訂正する； 2 .必要に応じて、候補数を自動的に表示します。 3、解答過程を与える)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="製品" scheme="https://jp.gamekon.com/categories/%E8%A3%BD%E5%93%81/"/>
+    
+    
+      <category term="無料" scheme="https://jp.gamekon.com/tags/%E7%84%A1%E6%96%99/"/>
+    
+      <category term="Sudoku" scheme="https://jp.gamekon.com/tags/Sudoku/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>毎日の仕事、ファンとのチャット</title>
+    <link href="https://jp.gamekon.com/2018/04/29/chatting-with-my-friends.html"/>
+    <id>https://jp.gamekon.com/2018/04/29/chatting-with-my-friends.html</id>
+    <published>2018-04-29T07:05:26.853Z</published>
+    <updated>2018-04-29T07:25:50.141Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>私にはQQ群があります。その中には私のファンがいて、毎日仕事中に彼らと话しているのが一番楽しかったことです。</p></blockquote><p><img src="/2018/04/29/chatting-with-my-friends/screenshot.jpg" alt="仕事チャット" title="仕事チャット"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;私にはQQ群があります。その中には私のファンがいて、毎日仕事中に彼らと话しているのが一番楽しかったことです。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/2018/04/29/chatting-with-my-friends/s
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="日常" scheme="https://jp.gamekon.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>意味のあるアルゴリズムのテーマです</title>
+    <link href="https://jp.gamekon.com/2018/04/28/An-Interesting-Question.html"/>
+    <id>https://jp.gamekon.com/2018/04/28/An-Interesting-Question.html</id>
+    <published>2018-04-28T02:40:55.713Z</published>
+    <updated>2018-04-28T02:46:02.101Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>n個のホットドッグがあります。一度に1個ずつ食べても2個ずつ食べてもかまいません。さまざまな食べ方を出力します。</p></blockquote><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2><p>解答:</p><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">class</span> EatingHotdogs</span><br><span class="line">&#123;</span><br><span class="line">    a: <span class="built_in">Array</span>&lt;<span class="built_in">number</span>&gt; = [];</span><br><span class="line">    n: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">constructor</span>(<span class="params">arg</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">this</span>.n = <span class="built_in">parseInt</span>(arg);</span><br><span class="line">        <span class="keyword">this</span>.eat(<span class="keyword">this</span>.n);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    eat(i: <span class="built_in">number</span>): <span class="built_in">void</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == <span class="number">0</span> &amp;&amp; <span class="keyword">this</span>.sum() == <span class="keyword">this</span>.n)</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.a);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.a.push(<span class="number">1</span>);</span><br><span class="line">            <span class="keyword">this</span>.eat(i - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">this</span>.a.pop();</span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">1</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">this</span>.a.push(<span class="number">2</span>);</span><br><span class="line">                <span class="keyword">this</span>.eat(i - <span class="number">2</span>);</span><br><span class="line">                <span class="keyword">this</span>.a.pop();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    sum(): <span class="built_in">number</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">let</span> s = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> <span class="keyword">this</span>.a)</span><br><span class="line">            s += <span class="keyword">this</span>.a[i];</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> EatingHotdogs(<span class="number">8</span>);</span><br></pre></td></tr></table></figure><hr><p>出力:</p><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span> ]</span><br><span class="line">[ <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span> ]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;n個のホットドッグがあります。一度に1個ずつ食べても2個ずつ食べてもかまいません。さまざまな食べ方を出力します。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="プログラム" scheme="https://jp.gamekon.com/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/"/>
+    
+      <category term="アルゴリズム" scheme="https://jp.gamekon.com/tags/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今日，私はクラウド共有ノートブックを作りました</title>
+    <link href="https://jp.gamekon.com/2018/04/23/online-notepad.html"/>
+    <id>https://jp.gamekon.com/2018/04/23/online-notepad.html</id>
+    <published>2018-04-23T08:23:45.856Z</published>
+    <updated>2018-04-23T08:33:47.218Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/04/23/online-notepad/notepad.png" alt="クラウド共有ノートブック" title="クラウド共有ノートブック"></p><p>今日，私は<a href="https://ws.gamekon.com/notepad" rel="external nofollow noopener noreferrer" target="_blank">クラウド共有ノートブック</a>を作りました。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/2018/04/23/online-notepad/notepad.png&quot; alt=&quot;クラウド共有ノートブック&quot; title=&quot;クラウド共有ノートブック&quot;&gt;&lt;/p&gt;
+&lt;p&gt;今日，私は&lt;a href=&quot;https://ws.gamekon.com/no
+      
+    
+    </summary>
+    
+      <category term="製品" scheme="https://jp.gamekon.com/categories/%E8%A3%BD%E5%93%81/"/>
+    
+    
+      <category term="無料" scheme="https://jp.gamekon.com/tags/%E7%84%A1%E6%96%99/"/>
+    
+      <category term="クラウド共有" scheme="https://jp.gamekon.com/tags/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E5%85%B1%E6%9C%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新しいPhotoshopへの古いプラグインのインストール</title>
+    <link href="https://jp.gamekon.com/2018/04/17/install-old-plugin-into-new-ps.html"/>
+    <id>https://jp.gamekon.com/2018/04/17/install-old-plugin-into-new-ps.html</id>
+    <published>2018-04-17T09:21:33.083Z</published>
+    <updated>2018-04-18T02:04:49.954Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>古いプラグインを使用する必要がある場合、Photoshopの最新バージョンがインストールをサポートしていないことがあります😞。この記事では、新しいPhotoshopへの古いプラグインのインストールについて説明します。</p></blockquote><hr><p>例えば、必要なプラグイン <code>plugin.zxp</code> があります，Photoshopのバージョンは、cc 2018の最新バージョンです。これを以前の方法でインストールすることはできませんが、どうすればよいでしょうか？<br>実際にはzxpはzip形式の圧縮ファイルです，winrarで解凍するとディレクトリが得られます。このフォルダを <code>C:\Users\%username%\AppData\Roaming\Adobe\CEP\extensions\</code> に移動しますいいですよ。<br>MACシステムの場合、対応するパスは <code>/Library/Application\ Support/Adobe/CEP/extensions/</code> 。</p><p>Photoshopのプラグインを開くことはできません，署名が承認されないというエラーが発生します。<br>解決策はを開くregedit，<code>HKEY_CURRENT_USER/Software/Adobe/</code> を選択します <code>CSXS.7</code> または <code>CSXS.8</code> など，ディレクトリの下に新しい文字列キーを作成 <code>PlayerDebugMode</code> 値 <code>1</code> 。</p><p>Photoshopを開くと、インストールされているプラグインが拡展ウィンドウに表示されます。</p><p>さあ、仕事を続けましょう！😊</p><p><img src="/2018/04/17/install-old-plugin-into-new-ps/map.png" alt="map"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;古いプラグインを使用する必要がある場合、Photoshopの最新バージョンがインストールをサポートしていないことがあります😞。この記事では、新しいPhotoshopへの古いプラグインのインストールについて説明します。&lt;/p&gt;
+&lt;/blockquo
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="経験" scheme="https://jp.gamekon.com/tags/%E7%B5%8C%E9%A8%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新しいゲームプロジェクト Happy Magic</title>
+    <link href="https://jp.gamekon.com/2018/04/15/happy-magic-01.html"/>
+    <id>https://jp.gamekon.com/2018/04/15/happy-magic-01.html</id>
+    <published>2018-04-15T08:33:57.958Z</published>
+    <updated>2018-04-18T02:03:23.299Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/04/15/happy-magic-01/HappyMagicModel.png" alt="model"></p><blockquote><p>Happy Magic, Happy Day!</p></blockquote><p>今日からゲームを<code>HappyMagic</code>始める!🎉<br>以上がゲームサービスモデル図ですので、ご期待ください。<br>ゲームスポンサークリックしてください:<br><a href="https://www.paypal.me/gamekon/" rel="external nofollow noopener noreferrer" target="_blank">https://www.paypal.me/gamekon/</a><br>ありがとう！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/2018/04/15/happy-magic-01/HappyMagicModel.png&quot; alt=&quot;model&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Happy Magic, Happy Day!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="プロジェクト" scheme="https://jp.gamekon.com/tags/%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>let&#39;s encryptを使用した無料の暗号化証明書</title>
+    <link href="https://jp.gamekon.com/2018/04/14/lets-encrypt-ssl.html"/>
+    <id>https://jp.gamekon.com/2018/04/14/lets-encrypt-ssl.html</id>
+    <published>2018-04-14T09:34:28.727Z</published>
+    <updated>2018-04-18T02:05:16.775Z</updated>
+    
+    <content type="html"><![CDATA[<br><h2 id="ドメイン名チェーン証明書"><a class="markdownIt-Anchor" href="#ドメイン名チェーン証明書"></a> <strong>ドメイン名チェーン証明書</strong></h2><p>これは従来のドメイン名証明書です。</p><h3 id="取得する"><a class="markdownIt-Anchor" href="#取得する"></a> <strong>取得する</strong></h3><ol><li>wget <a href="https://dl.eff.org/certbot-auto" rel="external nofollow noopener noreferrer" target="_blank">https://dl.eff.org/certbot-auto</a></li><li>chmod u+x certbot-auto</li><li>./certbot-auto certonly -d <em>DOMAIN</em>.com -d www.<em>DOMAIN</em>.com -d <em>OTHER</em>.<em>DOMAIN</em>.com</li><li>選択3 (webroot http-01 challenge)</li><li>メールアドレスを入力</li><li>ライセンス契約やライセンス情報の記録等を受ける</li><li>webrootパスの入力</li><li>別のwebrootを使用している場合は、続けて別のwebrootパスを入力します</li></ol><p>成功すると、SSL証明書は自動的に <code>/etc/letsencrypt/</code> の下に生成されます。</p><h3 id="更新する"><a class="markdownIt-Anchor" href="#更新する"></a> <strong>更新する</strong></h3><ol><li>テスト：cd / &amp;&amp; python -c ‘import random; import time; time.sleep(random.random() * 5)’ &amp;&amp; cd / &amp;&amp; ./root/certbot-auto renew --dry-run &amp;&amp; echo “ok”</li><li>自動実行スケジュールの作成<ul><li>nano /etc/crontab</li><li>0 0,12 * * * root cd / &amp;&amp; python -c ‘import random; import time; time.sleep(random.random() * 3600)’ &amp;&amp; cd / &amp;&amp; ./root/certbot-auto renew &amp;&amp; nginx -s reload</li><li>service cron restart</li></ul></li></ol><br><h2 id="共通の証明書"><a class="markdownIt-Anchor" href="#共通の証明書"></a> <strong>共通の証明書</strong></h2><p>共通の証明書<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>2018年春のlet’s encryptの公開申請の無料証明書です。私のウェブサイトでは使用していませんが、次のコマンドはほとんどテストされていません。</p><h3 id="取得する-2"><a class="markdownIt-Anchor" href="#取得する-2"></a> <strong>取得する</strong></h3><ol><li>wget <a href="https://dl.eff.org/certbot-auto" rel="external nofollow noopener noreferrer" target="_blank">https://dl.eff.org/certbot-auto</a></li><li>chmod u+x certbot-auto</li><li>./certbot-auto --server <a href="https://acme-v02.api.letsencrypt.org/directory" rel="external nofollow noopener noreferrer" target="_blank">https://acme-v02.api.letsencrypt.org/directory</a> -d “*.<em>DOMAIN</em>.com” --manual --preferred-challenges dns-01 certonly</li><li>メールアドレスを入力</li><li>ライセンス契約やライセンス情報の記録等を受ける</li><li>プロンプトに従ってDNS txtレコードを追加</li><li>dig _acme-challenge.<em>DOMAIN</em>.com txt 解析ログが有効かどうかを確認</li><li>対話型インタフェースに戻るenterキーを押して続行を確認</li></ol><p>成功すると、SSL証明書は自動的に <code>/etc/letsencrypt/</code> の下に生成されます。</p><h3 id="更新する-2"><a class="markdownIt-Anchor" href="#更新する-2"></a> <strong>更新する</strong></h3><ol><li>pip install dns-lexicon</li><li>examplesでcertbot.default.shダウンロードと設定</li><li>chmod u+x <a href="http://certbot.default.sh" rel="external nofollow noopener noreferrer" target="_blank">certbot.default.sh</a></li><li>テスト：cd / &amp;&amp; ./root/certbot-auto renew --manual-auth-hook <a href="http://certbot.default.sh" rel="external nofollow noopener noreferrer" target="_blank">certbot.default.sh</a> --manual-cleanup-hook <a href="http://certbot.default.sh" rel="external nofollow noopener noreferrer" target="_blank">certbot.default.sh</a> --dry-run &amp;&amp; echo “ok”</li><li>自動実行スケジュールの作成<ul><li>nano /etc/crontab</li><li>0 0 * * 0 root cd / &amp;&amp; ./root/certbot-auto renew --manual-auth-hook /root/certbot.default.sh --manual-cleanup-hook /root/certbot.default.sh &amp;&amp; nginx -s reload</li><li>service cron restart</li></ul></li></ol><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item">共通の証明書，ワイルドカード証明書とも呼ばれる。 <a href="#fnref1" class="footnote-backref">↩︎</a></li></ol></section>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;br&gt;
+&lt;h2 id=&quot;ドメイン名チェーン証明書&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#ドメイン名チェーン証明書&quot;&gt;&lt;/a&gt; &lt;strong&gt;ドメイン名チェーン証明書&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;これは従来のドメイン名証明書です。&lt;/p
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="ドメイン" scheme="https://jp.gamekon.com/tags/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/"/>
+    
+      <category term="経験" scheme="https://jp.gamekon.com/tags/%E7%B5%8C%E9%A8%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photoshopの2点の経験について</title>
+    <link href="https://jp.gamekon.com/2018/04/12/two-experiences-about-photoshop.html"/>
+    <id>https://jp.gamekon.com/2018/04/12/two-experiences-about-photoshop.html</id>
+    <published>2018-04-12T06:30:00.722Z</published>
+    <updated>2018-04-18T02:06:04.428Z</updated>
+    
+    <content type="html"><![CDATA[<hr><ul><li><a href="https://helpx.adobe.com/photoshop/using/generate-assets-layers.html" rel="external nofollow noopener noreferrer" target="_blank">イメージ資産ジェネレーター</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></li><li><a href="https://www.cherubicsoft.com/en/projects/sagethumbs" rel="external nofollow noopener noreferrer" target="_blank">psdサムネイルプレビュー</a><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li></ul><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item">対応するadobe illustratorの機能は、export assets panelです。 <a href="#fnref1" class="footnote-backref">↩︎</a></li><li id="fn2" class="footnote-item">sagethumbsをインストールする前に<a href="http://sourceforge.net/projects/ghostscript/files/AFPL%20Ghostscript/8.54/gs854w64.exe/download" rel="external nofollow noopener noreferrer" target="_blank">Ghostscript library</a>をインストールする;<br>sagethumbsをインストールした後、イメージ埋め込みサムネイル機能をオンにして、イメージファイルの最大サイズ( cache file max )の値を大きくします。<br>Photoshopでファイルを保存するときは、必ず“サムネイル”オプションをオンにしてください。<strong>その後</strong>で保存したPSDファイルにサムネイルが表示されます。 <a href="#fnref2" class="footnote-backref">↩︎</a></li></ol></section>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://helpx.adobe.com/photoshop/using/generate-assets-layers.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; targ
+      
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="経験" scheme="https://jp.gamekon.com/tags/%E7%B5%8C%E9%A8%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>パスワード生成器</title>
+    <link href="https://jp.gamekon.com/2018/04/12/Password-Generator.html"/>
+    <id>https://jp.gamekon.com/2018/04/12/Password-Generator.html</id>
+    <published>2018-04-12T04:19:19.463Z</published>
+    <updated>2018-04-18T02:05:47.201Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/04/12/Password-Generator/Password-Generator.png" alt="Password-Generator"></p><p>cocos creatorを使ったパスワード生成器です。</p><p>この製品は無料のソフトウェアで、<a href="https://github.com/GAMEKON/PasswordGenerator" rel="external nofollow noopener noreferrer" target="_blank">ここ</a>にはオープンソースがあります。</p><p><a href="https://gamekon.github.io/storge/Password-Generator/index.html" rel="external nofollow noopener noreferrer" target="_blank">ここ</a>でオンラインで使用することもできます。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/2018/04/12/Password-Generator/Password-Generator.png&quot; alt=&quot;Password-Generator&quot;&gt;&lt;/p&gt;
+&lt;p&gt;cocos creatorを使ったパスワード生成器です。&lt;/p&gt;
+&lt;p&gt;この製
+      
+    
+    </summary>
+    
+      <category term="製品" scheme="https://jp.gamekon.com/categories/%E8%A3%BD%E5%93%81/"/>
+    
+    
+      <category term="Cocos" scheme="https://jp.gamekon.com/tags/Cocos/"/>
+    
+      <category term="無料" scheme="https://jp.gamekon.com/tags/%E7%84%A1%E6%96%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ドメインの販売cocosgames.com</title>
+    <link href="https://jp.gamekon.com/2018/04/04/cocos-domain-on-sale.html"/>
+    <id>https://jp.gamekon.com/2018/04/04/cocos-domain-on-sale.html</id>
+    <published>2018-04-04T02:18:51.467Z</published>
+    <updated>2018-04-18T02:02:33.414Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="スタジオでの資金不足のため-ドメイン名の名前で販売された-cocosgamescom"><a class="markdownIt-Anchor" href="#スタジオでの資金不足のため-ドメイン名の名前で販売された-cocosgamescom"></a> <strong>スタジオでの資金不足のため、ドメイン名の名前で販売された <a href="http://cocosgames.com" rel="external nofollow noopener noreferrer" target="_blank">cocosgames.com</a>。</strong></h3><h3 id="需要者はここで購入してください"><a class="markdownIt-Anchor" href="#需要者はここで購入してください"></a> <strong>需要者は<a href="https://www.paypal.me/gamekon/99999jpy" rel="external nofollow noopener noreferrer" target="_blank">ここ</a>で購入してください。</strong></h3><h3 id="そして-supportgamekoncomを連絡し-ドメイン名の情報を変更します"><a class="markdownIt-Anchor" href="#そして-supportgamekoncomを連絡し-ドメイン名の情報を変更します"></a> <strong>そして、support@gamekon.comを連絡し、ドメイン名の情報を変更します。</strong></h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;スタジオでの資金不足のため-ドメイン名の名前で販売された-cocosgamescom&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#スタジオでの資金不足のため-ドメイン名の名前で販売された-cocosgamescom&quot;&gt;&lt;/a&gt; &lt;st
+      
+    
+    </summary>
+    
+      <category term="製品" scheme="https://jp.gamekon.com/categories/%E8%A3%BD%E5%93%81/"/>
+    
+    
+      <category term="Cocos" scheme="https://jp.gamekon.com/tags/Cocos/"/>
+    
+      <category term="ドメイン" scheme="https://jp.gamekon.com/tags/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cocos Creatorの色相、明度、彩度プラグイン</title>
+    <link href="https://jp.gamekon.com/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html"/>
+    <id>https://jp.gamekon.com/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html</id>
+    <published>2018-04-03T11:14:28.931Z</published>
+    <updated>2018-04-18T02:04:04.735Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator/hsl_preview.png" alt="hsl_preview" title="Cocos Creatorの色相、明度、彩度プラグイン"></p><a id="more"></a><p><img src="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator/hsl.gif" alt="hsl" title="Cocos Creatorの色相、明度、彩度プラグイン"></p><p>アイコンをグレースケールに変えたいですか？ 異なる色のモンスターを作るために絵を使いたいですか？ 飛行機が爆発する前にハイライトしたいですか？</p><p>プラグインはすべて入手！</p><p>使用法：Sprite_HSL.jsを任意のスプライトにドラッグして、調整してください~~</p><p>Cocos Creator 1.9はHTML5（WebGL）とMobile Nativeでテスト済みです。</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="width:fit-content; text-align:center"><input type="hidden" name="charset" value="utf-8"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="CRE6QAE2JZEFY"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Cocos Creatorの色相、明度、彩度プラグイン"><input type="hidden" name="item_number" value="jp-p-HSL"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="no_note" value="0"><input type="hidden" name="cn" value="ゲームのためのコメント:"><input type="hidden" name="no_shipping" value="1"><input type="hidden" name="rm" value="1"><input type="hidden" name="return" value="http://jp.gamekon.com/thank-you"><input type="hidden" name="cancel_return" value="http://jp.gamekon.com/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator"><input type="hidden" name="currency_code" value="JPY"><input type="hidden" name="tax_rate" value="0.000"><input type="hidden" name="shipping" value="0"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted"><table><tr><td><input type="hidden" name="on0" value="&#35377;可&#35388;">&#35377;可&#35388;</td></tr><tr><td><select name="os0"><option value="&#20491;人がライセンスを使用する">&#20491;人がライセンスを使用する ¥ 212 JPY</option><option value="会社はライセンスを使用する">会社はライセンスを使用する ¥ 1,274 JPY</option></select> </td></tr></table><input type="hidden" name="option_select0" value="&#20491;人がライセンスを使用する"><input type="hidden" name="option_amount0" value="212"><input type="hidden" name="option_select1" value="会社はライセンスを使用する"><input type="hidden" name="option_amount1" value="1274"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator/hsl_preview.png&quot; alt=&quot;hsl_preview&quot; title=&quot;Cocos Creatorの色相、明度、彩度プラグイン&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="製品" scheme="https://jp.gamekon.com/categories/%E8%A3%BD%E5%93%81/"/>
+    
+    
+      <category term="Cocos" scheme="https://jp.gamekon.com/tags/Cocos/"/>
+    
+      <category term="プラグイン" scheme="https://jp.gamekon.com/tags/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>イメージ暗号化のもう一つのアイデア</title>
+    <link href="https://jp.gamekon.com/2018/04/03/another-way-to-encrypt-images.html"/>
+    <id>https://jp.gamekon.com/2018/04/03/another-way-to-encrypt-images.html</id>
+    <published>2018-04-03T05:08:11.046Z</published>
+    <updated>2018-04-18T02:01:57.272Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>数千マイルは一歩から始まります。</p></blockquote><p>先日、大病気になってから帰ってきて、専门と関连の技术を见てみて、変化がとても大きかった。技术の更新は、日新月异で、技术を大幅にアップグレードしている。<br>ハードディスクを整理するときは、unityで作った多くの小研究項目をまとめてみた。例えば、どのように暗号化されたデータは、実行時に改竄されているか、例えば、この文章が議論する「ピクチャ暗号化の別のアプローチ」のように、どのように暗号化された文字列を用いて、広告主idの番号を保護するかのことである。</p><a id="more"></a><p>なぜ写真を暗号化するのか?実际には、他人があなたのゲーム写真を入手してゲームを作って再现して、その分、あなたの利益を分けるのが目的です。<br>私自身が描いた絵はとてもみにくいので、当时この研究をしていても心が……<br>コメントは无いので、ブログで书いてみましょう。</p><h2 id="基本的な考え方"><a class="markdownIt-Anchor" href="#基本的な考え方"></a> <strong>基本的な考え方</strong></h2><p>なぜ「もう一つ」と呼ばれているのでしょう?この手段は、ハッカーが写真を手に入れるのではなく、1つの考えを変えることであり、彼らに手を取られても使えない。<br>(実际には万能の动态メモリーを抽出する方法では、どの暗号化も事がないと考えられていますが、このような状况は、本编では考えていません。)<br>基本的な考え方はこうです：</p><p>1.ゲーム全体の大きさを縮小するために画像を圧縮する。<br>2.部分画像画素を抽出し、暗号化して他のファイルに保存する。<br>3.原画像が抽出された画素を除いて、そのような画像は不完全であり、ハッカーが受け取っても使用できない。<br>4.不完全な画像と暗号化されたデータを使用して、ゲームの実行時に復号化し、ゲームの体験に影響を与えないようにするためには十分に速度をつけなければならない。</p><h2 id="pngquantとpngoo"><a class="markdownIt-Anchor" href="#pngquantとpngoo"></a> <strong>pngquantとPNGoo</strong></h2><p><a href="https://pngquant.org/" rel="external nofollow noopener noreferrer" target="_blank">pngquant</a> 业界の有名なpngピクチャの圧縮ツールであり、肉眼では违いを见ることができるようにして70%を超える。<br><a href="https://pngquant.org/PNGoo.0.1.1.zip" rel="external nofollow noopener noreferrer" target="_blank">PNGoo</a> pngquantを圧縮エンジンにしたwindowsの下のGUI。<br>pngooはlicenseのオープンソースではない。下に来て<a href="https://github.com/NikkiDelRosso/PNGoo" rel="external nofollow noopener noreferrer" target="_blank">ダウンロードします</a>，その上に手足を動かします,画像の圧縮だけではありません，私たちが実現したい暗号機能をサポートすることもできます。<br>pngooはc#开発している。net応用プログラム。まずコンピュータに<a href="https://www.visualstudio.com/" rel="external nofollow noopener noreferrer" target="_blank">visual studio</a>がインストールされています。</p><h2 id="画像暗号化"><a class="markdownIt-Anchor" href="#画像暗号化"></a> <strong>画像暗号化</strong></h2><p>pngooのメインウィンドウを開いて、中にはcheckboxコントロールを加えます。</p><p><img src="/2018/04/03/another-way-to-encrypt-images/pngoo_add_checkbox.png" alt="pngoo_add_checkbox"></p><p>左のオプションをクリックするとイメージが暗号化され、正しいオプションをクリックするとイメージのサイズが縮小されます。<br>メインコードは、 <code>BatchFileCompressor.cs</code> の<code>compress</code> 関数を変更します。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">private Compressor.PNGCompressor compress(string filePath)</span><br><span class="line">&#123;</span><br><span class="line">    // read file</span><br><span class="line">    byte[] fileData = File.ReadAllBytes(filePath);</span><br><span class="line"></span><br><span class="line">    List&lt;Color&gt; save = null;</span><br><span class="line">    if (Encrypt || HalfScale)</span><br><span class="line">    &#123;</span><br><span class="line">        MemoryStream ms = new MemoryStream(fileData);</span><br><span class="line">        Image image = System.Drawing.Image.FromStream(ms);</span><br><span class="line">        Bitmap b = new Bitmap(image);</span><br><span class="line"></span><br><span class="line">        if (Encrypt)</span><br><span class="line">        &#123;</span><br><span class="line">            save = new List&lt;Color&gt;();</span><br><span class="line">            for (int k = 0; k &lt; b.Height; k++)</span><br><span class="line">            &#123;</span><br><span class="line">                for (int j = 0; j &lt; b.Width; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    if (j==(int)(k*b.Width/b.Height) || (b.Width-1-j)==(int)(k*b.Width/b.Height) ||</span><br><span class="line">                        j==0 &amp;&amp; k==0 || j==0 &amp;&amp; k==b.Height-1 || j==b.Width-1 &amp;&amp; k==0 || j==b.Width-1 &amp;&amp; k==b.Height-1)</span><br><span class="line">                    &#123;</span><br><span class="line">                        save.Add(b.GetPixel(j,k));</span><br><span class="line">                        b.SetPixel(j,k,Color.Black);</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        if (HalfScale)</span><br><span class="line">        &#123;</span><br><span class="line">            Bitmap hb = new Bitmap(b.Width/2, b.Height/2);</span><br><span class="line">            Graphics g = Graphics.FromImage(hb);</span><br><span class="line">            g.InterpolationMode = InterpolationMode.HighQualityBicubic;</span><br><span class="line">            g.DrawImage(b, new Rectangle(0, 0, hb.Width, hb.Height), new Rectangle(0, 0, b.Width, b.Height), GraphicsUnit.Pixel);</span><br><span class="line">            g.Dispose();</span><br><span class="line">            b.Dispose();</span><br><span class="line">            b = hb;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ms.Dispose();</span><br><span class="line">        ms.Close();</span><br><span class="line">        ms = new MemoryStream();</span><br><span class="line">        b.Save(ms, ImageFormat.Png);</span><br><span class="line">        fileData = ms.GetBuffer();</span><br><span class="line">        b.Dispose();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    PNGCompressor pngc = null;</span><br><span class="line">    // select which compressor to use</span><br><span class="line">    switch (this.CompressionSettings.OutputType)</span><br><span class="line">    &#123;</span><br><span class="line">        case CompressionSettings.PNGType.Indexed:</span><br><span class="line">            pngc = compressIndexed(fileData);</span><br><span class="line">            break;</span><br><span class="line">        default:</span><br><span class="line">            throw new Exception(&quot;Invalid output type&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (Encrypt &amp;&amp; pngc!=null)</span><br><span class="line">    &#123;</span><br><span class="line">        byte[] obs = new byte[save.Count*4];</span><br><span class="line">        int plus = save.Count % 5;</span><br><span class="line">        int count35 = (save.Count - plus) * 3 / 5;</span><br><span class="line">        for (int l = count35-1; l &gt;= 0; l--)</span><br><span class="line">        &#123;</span><br><span class="line">            byte[] savedBS = System.BitConverter.GetBytes(save[l].ToArgb());</span><br><span class="line">            savedBS.CopyTo(obs, (count35-1-l)*4);</span><br><span class="line">        &#125;</span><br><span class="line">        for (int m = save.Count-1; m &gt;= count35; m--)</span><br><span class="line">        &#123;</span><br><span class="line">            byte[] savedBS = System.BitConverter.GetBytes(save[m].ToArgb());</span><br><span class="line">            savedBS.CopyTo(obs, (save.Count-1-m+count35)*4);</span><br><span class="line">        &#125;</span><br><span class="line">        string outputDirectory = OutputDirectory;</span><br><span class="line">        string fileName = Path.GetFileNameWithoutExtension(filePath) + &quot;.bytes&quot;;</span><br><span class="line">        if (outputDirectory == null)</span><br><span class="line">        &#123;</span><br><span class="line">            outputDirectory = Path.GetDirectoryName(filePath);</span><br><span class="line">        &#125;</span><br><span class="line">        string outputFilePath = System.IO.Path.Combine(outputDirectory, fileName);</span><br><span class="line">        File.WriteAllBytes(outputFilePath, obs);</span><br><span class="line">    &#125;</span><br><span class="line">    return pngc;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>画像サイズ縮小の機能を無視して、このコードは画像上に十字（x字型）を黒で描くことを意味し、覆われたピクセルは.bytesファイルに格納されます。 もちろん、それを順番に格納することはできないので、ハッカーが簡単に発見することができます。 代わりに、関数内の変数 <code>count35</code>であるオフセットを決定します。 ここから、ピクセルデータを読み取ってファイルに保存し、残りのピクセルデータをファイルに保存します。 このオフセットは、元の完全な画像を素早く復元できるようにゲームエンジンに指示する必要があります。<br>このオフセットの値は、「取り出されたピクセルデータの長さ - 長さと残りの5に3を掛けて5で割ったもの」と定義されます。 このようにして、各ピクチャのオフセットは必ずしも同じではなく、追加の記録なしに、ゲームエンジンは解読効果の迅速な復元を知り、それを行うことができる。<br>この方法は私が思いついたものです。あなたに合った方法を使うこともできます。</p><h2 id="画像の復元"><a class="markdownIt-Anchor" href="#画像の復元"></a> <strong>画像の復元</strong></h2><p>ここでは、Unityのゲームエンジンを使用します。<br>新しいイメージクラス <code>CTexture</code> を作成します。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br><span class="line">using System.Collections;</span><br><span class="line"></span><br><span class="line">[System.SerializableAttribute]</span><br><span class="line">public class CTexture</span><br><span class="line">&#123;</span><br><span class="line">public Texture2D image;</span><br><span class="line">public TextAsset data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>対応するエディタクラス<code>CTextureDrawer</code>。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">using UnityEditor;</span><br><span class="line">using UnityEngine;</span><br><span class="line"></span><br><span class="line">[CustomPropertyDrawer(typeof(CTexture))]</span><br><span class="line">public class CTextureDrawer : PropertyDrawer</span><br><span class="line">&#123;</span><br><span class="line">public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)</span><br><span class="line">&#123;</span><br><span class="line">label.text = &quot;Encrypted Texture&quot;;</span><br><span class="line">EditorGUI.BeginProperty(position, label, property);</span><br><span class="line">position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);</span><br><span class="line">var indent = EditorGUI.indentLevel;</span><br><span class="line">EditorGUI.indentLevel = 0;</span><br><span class="line">var imageRect = new Rect(position.x+50, position.y, 100, position.height);</span><br><span class="line">var dataRect = new Rect(position.x +210, position.y, 100, position.height);</span><br><span class="line">EditorGUI.LabelField(new Rect(position.x, position.y, 50, position.height), &quot;image: &quot;);</span><br><span class="line">EditorGUI.PropertyField(imageRect, property.FindPropertyRelative(&quot;image&quot;), GUIContent.none);</span><br><span class="line">EditorGUI.LabelField(new Rect(position.x+170, position.y, 50, position.height), &quot;data: &quot;);</span><br><span class="line">EditorGUI.PropertyField(dataRect, property.FindPropertyRelative(&quot;data&quot;), GUIContent.none);</span><br><span class="line">EditorGUI.indentLevel = indent;</span><br><span class="line">EditorGUI.EndProperty();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>つまり、すべてのctextureは、不完全なピクチャと、それに対応するデータファイルの2つの部分から構成されていることになる。<br>画像を解読:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">private Color GetColor(TextAsset ta, int index, int count, int plus)</span><br><span class="line">&#123;</span><br><span class="line">    int realIndex = (count - plus) / 5 * 3 -1 - index;</span><br><span class="line">    if (realIndex &lt; 0)</span><br><span class="line">        realIndex += count;</span><br><span class="line">    int c = System.BitConverter.ToInt32(ta.bytes, realIndex*4);</span><br><span class="line">    Color color = new Color();</span><br><span class="line">    color.b = (c &amp; 0x000000ff)/256f;</span><br><span class="line">    color.g = ((c &amp; 0x0000ff00) &gt;&gt; 8)/256f;</span><br><span class="line">    color.r = ((c &amp; 0x00ff0000) &gt;&gt; 16)/256f;</span><br><span class="line">    color.a = ((c &amp; 0xff000000) &gt;&gt; 24)/256f;</span><br><span class="line">    return color;</span><br><span class="line">&#125;</span><br><span class="line">public void DecryptImages()</span><br><span class="line">&#123;</span><br><span class="line">    foreach (var ct in encryptedImages)</span><br><span class="line">    &#123;</span><br><span class="line">        int count = ct.data.bytes.Length / 4;</span><br><span class="line">        int plus = count % 5;</span><br><span class="line">        int i = 0;</span><br><span class="line">        for (int k = ct.image.height-1; k &gt;= 0; k--)</span><br><span class="line">        &#123;</span><br><span class="line">            for (int j = 0; j &lt; ct.image.width; j++)</span><br><span class="line">            &#123;</span><br><span class="line">                if (j==(int)(ct.image.height-1-k)*ct.image.width/ct.image.height || (ct.image.width-1-j)==(int)(ct.image.height-1-k)*ct.image.width/ct.image.height ||</span><br><span class="line">                    j==0 &amp;&amp; k==0 || j==0 &amp;&amp; k==ct.image.height-1 || j==ct.image.width-1 &amp;&amp; k==0 || j==ct.image.width-1 &amp;&amp; k==ct.image.height-1)</span><br><span class="line">                &#123;</span><br><span class="line">                    ct.image.SetPixel(j,k,GetColor(ct.data, i, count, plus));</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ct.image.Apply();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>ゲームの<code>awake</code> 関数で発進 <code>decryptimages</code> 完成すれば関数写真を解除。<br>可視画像の復元プロセスは、完全に暗号化の逆の操作です。</p><h2 id="要約"><a class="markdownIt-Anchor" href="#要約"></a> <strong>要約</strong></h2><p>このような小児科的トリックは実際には実用的な意味では意味がありません。それでも、この記事は、考え方として言及する価値があります。</p><h3 id="参照リンク"><a class="markdownIt-Anchor" href="#参照リンク"></a> 参照リンク</h3><ul><li>pngquant  <a href="https://pngquant.org/" title="pngquant" rel="external nofollow noopener noreferrer" target="_blank">https://pngquant.org/</a>。</li><li>PNGoo  <a href="https://github.com/NikkiDelRosso/PNGoo" title="PNGoo" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/NikkiDelRosso/PNGoo</a>。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数千マイルは一歩から始まります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先日、大病気になってから帰ってきて、専门と関连の技术を见てみて、変化がとても大きかった。技术の更新は、日新月异で、技术を大幅にアップグレードしている。&lt;br&gt;
+ハードディスクを整理するときは、unityで作った多くの小研究項目をまとめてみた。例えば、どのように暗号化されたデータは、実行時に改竄されているか、例えば、この文章が議論する「ピクチャ暗号化の別のアプローチ」のように、どのように暗号化された文字列を用いて、広告主idの番号を保護するかのことである。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="Unity" scheme="https://jp.gamekon.com/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webstorm+bitbucket+git(lfs)を使用して開発環境を作る</title>
+    <link href="https://jp.gamekon.com/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html"/>
+    <id>https://jp.gamekon.com/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html</id>
+    <published>2018-04-01T09:56:40.394Z</published>
+    <updated>2018-04-18T02:06:23.802Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>その事を、漉しなど。</p></blockquote><p>貧しい個人のゲーム開発者として、どのように作業効率を向上させることが、プロジェクトの成功の鍵となりました。 この記事では、さまざまなソフトウェアを使用して自分の開発環境を構築する方法について説明します。<br>私の現在のオペレーティングシステムはWindows 10 Professionalで、他のシステムはほとんど同じです。</p><a id="more"></a><h2 id="ソフトウェア実装"><a class="markdownIt-Anchor" href="#ソフトウェア実装"></a> <strong>ソフトウェア実装</strong></h2><ul><li>実装 <a href="http://www.jetbrains.com/webstorm/" title="WebStorm" rel="external nofollow noopener noreferrer" target="_blank">WebStorm</a>。</li><li>実装 <a href="https://git-scm.com/" title="Git" rel="external nofollow noopener noreferrer" target="_blank">Git</a>。</li><li>実装 <a href="https://tortoisegit.org/" title="TortoiseGit" rel="external nofollow noopener noreferrer" target="_blank">TortoiseGit</a>。</li><li>実装 <a href="https://git-lfs.github.com/" title="LFS" rel="external nofollow noopener noreferrer" target="_blank">LFS</a>。</li></ul><p>その中で、WebStormは、Gitプラグインのサポートを確実にするために、インストール後に開発ツールのフロント（バック）側を最大限に活用しています。<br>Gitはバージョンコントロールソフトウェアです。TortoiseGitはWindowsプラットフォーム用のグラフィカルインターフェイスです.Gitよりもはるかに使いやすいです。<br>LFSは比較的新しく、PhotoShopのpsdファイルのような非コードの大きなファイルを追跡する責任があります。これを以下で使用します。</p><h2 id="ソフトウェア構成"><a class="markdownIt-Anchor" href="#ソフトウェア構成"></a> <strong>ソフトウェア構成</strong></h2><p>LFSをインストールしたら、コンソールに <code>git lfs install</code> と入力してLFSにGitとの関係を確立させます。<br>WebStormをインストールしたら、GitプラグインとTerminalプラグインを有効にします。</p><h2 id="ソフトウェア使用"><a class="markdownIt-Anchor" href="#ソフトウェア使用"></a> <strong>ソフトウェア使用</strong></h2><p>WebStormを開き、新しいプロジェクトを作成します。 メニュー項目から <code>VCS -&gt; Enable Version Control Integration</code> を選択します。<br>ポップアップメニューで <code>Git</code>を選択します。 この時点で、プロジェクトのファイル名が赤色に変わり、Gitがすでに動作していることがわかります。<br>私は元のPhotoShopまたはAdobe Illustratorファイル、いくつかのオーディオファイルなどを保存するプロジェクトフォルダにrawというフォルダを追加するのが好きです<br>それらの階層関係は次のとおりです。</p><pre><code>project│└───assets│   └───node_modules│└───raw    │    └───psd    │    └───background.psd    └───ai    │    └───music</code></pre><p>このように、rawファイルはLFSが動作する場所です。<br>WebStormでコンソールを開き、 <code>git lfs track &quot;raw/*/*&quot;</code> と入力します。コマンドが正常に実行された場合は、ファイル <code>.gitattributes</code> が自動的にプロジェクトフォルダに追加されます。 次のように記録する</p><pre><code>raw/*/* filter=lfs diff=lfs merge=lfs -text</code></pre><p>まあ、LFSも私の生のフォルダを追跡しています。 このとき、Gitにプロジェクトディレクトリを追加してください。作成した.gitattributesファイルも含める必要があります。<br>この時点で、すべてのファイル名は緑色で、送信可能であることを示しています。<code>VCS -&gt; Commit...</code></p><pre><code>注意：最初のCommitの前に必ずgit lfs trackを実行してください！</code></pre><p>bitbucket.orgにプロジェクトリポジトリを設定し、gitアドレスを記録してから押してください。ローカル数百kのpsdファイルpushはbitbucketの後にはわずか数百バイトしかありません。リアルタイムでWebページ上でプレビューすることも非常に便利です。</p><h2 id="常用gitとlfsコマンド"><a class="markdownIt-Anchor" href="#常用gitとlfsコマンド"></a> <strong>常用gitとlfsコマンド</strong></h2><ul><li><code>git init</code>                                          gitコードを初期化する。</li><li><code>git clone</code>                                         クローンコード。</li><li><code>git commit</code>                                        コードの変更を提出する。</li><li><code>git revert</code>                                        コードの変更をキャンセルする。</li><li><code>git pull</code>                                          コード更新。</li><li><code>git clean</code>                                         gitにトライしないファイルを取り除きます。</li><li><code>git branch</code>                                        ブランチを見る。</li><li><code>git checkout master</code>                               gitの主幹に切り替えた。</li><li><code>git checkout -b local-branch origin/remote-branch</code> gitのブランチに切り替えます。</li><li><code>git lfs track &quot;*.png&quot;</code>                             lfsがpngファイルを追跡する。</li><li><code>git lfs ls-files</code>                                  lfsをチェックしたファイルをチェックする。</li><li><code>git lfs track</code>                                     lfsを見て追跡するpattern。</li><li><code>git lfs clone</code>                                     大きなファイルが含まれています。</li></ul><h3 id="リンクを参照する"><a class="markdownIt-Anchor" href="#リンクを参照する"></a> リンクを参照する</h3><ul><li>Use Git LFS with Bitbucket  <a href="https://confluence.atlassian.com/bitbucket/use-git-lfs-with-bitbucket-828781636.html" title="Use Git LFS with Bitbucket" rel="external nofollow noopener noreferrer" target="_blank">https://confluence.atlassian.com/bitbucket/use-git-lfs-with-bitbucket-828781636.html</a>。</li><li>LFS Getting Started  <a href="https://git-lfs.github.com/" title="LFS Getting Started" rel="external nofollow noopener noreferrer" target="_blank">https://git-lfs.github.com/</a>。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;その事を、漉しなど。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;貧しい個人のゲーム開発者として、どのように作業効率を向上させることが、プロジェクトの成功の鍵となりました。 この記事では、さまざまなソフトウェアを使用して自分の開発環境を構築する方法について説明します。&lt;br&gt;
+私の現在のオペレーティングシステムはWindows 10 Professionalで、他のシステムはほとんど同じです。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
+    
+    
+      <category term="経験" scheme="https://jp.gamekon.com/tags/%E7%B5%8C%E9%A8%93/"/>
+    
+  </entry>
+  
+</feed>
