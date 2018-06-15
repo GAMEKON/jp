@@ -252,65 +252,9 @@
 <p>5月の最後の2時間にcocos creator v2. 0のリリースを準備しました。 楽しんで！ 興奮しました！<br>
 何が更新されたかについてです このようにしてもよい。 このようにしてもよい。 私は、変更が大きすぎるので、何から話しているか分からないと言うことしかできません。 一言で言えば、コンポーネント層APIが不変であることを保証するために、我々は底層を完全に書き換えたが、cocos creator v2. 0以降、cocos2d xのフレームワークから完全に再生され、古いcocosの影が見えなくなり、たとえば1.x時代のsgnodeが完全に見えなくなった。 現在、v2. 0を直接使用すると、多くの警告やエラーが発生します。通常、古いAPIを使用しているため、これらのAPIには詳細なエラーが表示されます。これらのAPIには、アップグレード方法や交換方法などが含まれています。すべてのエラー情報に注意してください。 アップグレードが完了すると、v2. 0のパフォーマンスが向上しているはずですが、実際にはv2. 0には多くの驚きが用意されています。 ここではまず申し訳ありませんが、テクニカルプレビューバージョンの準備が急がれているため、すべてのドキュメントを準備することはできません。これらの作業は、正式版がリリースされる前に完全に実行されるため、v2. 0の可能性を最大限に引き出すことができます。<br>
 最も重要なのは、プロジェクトをバックアップして、両手を制御できないようにしてください。</p>
-<h2 id="バージョンの更新"><a class="markdownIt-Anchor" href="#バージョンの更新"></a> <strong>バージョンの更新</strong></h2>
-<p>cocos creator v2.0.0 preview 4を更新: <a href="http://download.cocos.com/CocosCreator/beta/CocosCreator_v2.0.0-preview.4_20180608.dmg" rel="external nofollow noopener noreferrer" target="_blank">MACバージョンのダウンロード</a> | <a href="http://download.cocos.com/CocosCreator/beta/CocosCreator_v2.0.0-preview.4.7z" rel="external nofollow noopener noreferrer" target="_blank">windowsバージョンのダウンロード</a> (2018/6/8)</p>
-<ul>
-<li>[FEATURE] 新規ノードアルファカスケード</li>
-<li>[MODIF] 必要に応じてゲームの重力を検知</li>
-<li>[MODIF] editboxのプラットフォーム依存コードをプラットフォーム依存builtinモジュールに移動</li>
-<li>[FIX] 回復prefabがオフのときにシーンを回復することによるエラー</li>
-<li>[FIX] prefab内部のアニメーションを編集しているときに、別のprefabをダブルクリックして開くとハングアップする問題を修正します。</li>
-<li>[FIX] sprite fill typeがradialの場合にfill centerを編集できない問題を修正します。</li>
-<li>[FIX] 修正ノードanchorを修正した後、元に戻す修正による表示エラーを元に戻す</li>
-<li>[FIX] tilemapに空のlayerが含まれている場合にエラーとなる問題の修正</li>
-<li>[FIX] DOM関連コンポーネントイベントリスナによるメモリリークの問題の修正</li>
-<li>[FIX] maskコンポーネントの切り替えモードおよび再有効化時に発生する継続的なエラーの修復</li>
-<li>[FIX] 隣接するmaskが誤ってバッチ処理される問題を修正します。</li>
-<li>[FIX] active状態更新後のworldtransformエラーの修正</li>
-<li>[FIX] auto remove on finishによってパーティクルノードがエディタに表示されなくなる問題を修正します。</li>
-<li>[FIX] exampleエンジニアリングメインインタフェースのテストボタンの表示ブレを修正</li>
-<li>[FIX] editboxの表示残り問題を修正</li>
-<li>[FIX] 複数のレンダリングコンポーネントをノードの下に追加する際のエラーの問題を修正します。</li>
-<li>[FIX] bmfont labelの色が設定できない問題を修正する</li>
-<li>[FIX] labeloutline透明度がノードの透明度に影響されない問題の修正</li>
-<li>[FIX] アンドロメダゲームプラットフォームの重力感知イベントの修正</li>
-<li>[FIX] spriteコンポーネントslicedモードのレンダリング問題の修正</li>
-<li>[FIX] spriteコンポーネントgraystateが原因で発生するglwarningの問題の修正</li>
-<li>[FIX] preabを編集した後にシーンに戻ると、シーンが無効になる問題を修正します。</li>
-<li>[FIX] 画面の向きがデバイスの向きと異なる場合のacclerometerイベントの軸エラーの修正</li>
-<li>[FIX] ノードイベントのtargetとcurrenttargetの問題を修正する</li>
-</ul>
-<h2 id="関連リソース"><a class="markdownIt-Anchor" href="#関連リソース"></a> <strong>関連リソース</strong></h2>
-<p><a href="https://github.com/pandamicro/heartfelt" rel="external nofollow noopener noreferrer" target="_blank">Material 使用例</a></p>
-<h2 id="release-notes"><a class="markdownIt-Anchor" href="#release-notes"></a> <strong>RELEASE NOTES</strong></h2>
-<p><strong>プラットフォームのサポート</strong><br>
-Cocos Creator v2.0.0 Preview はテクノロジプレビュー版であり、現在はすべてのプラットフォームがサポートされていません。サポートされているプラットフォームを次に示します。</p>
-<p>Web（WebGL レンダリング）<br>
-Wechat ミニゲーム</p>
-<p><strong>リソースのアップグレード</strong><br>
-v2. 0はv1. 10のすべての変更を統合し、v1. 10は基本的なリソースタイプを再構築しました。ほとんどのプロジェクトは影響を受けませんが、一部のプロジェクトには警告が表示される場合があります。詳細については、<a href="http://docs.cocos.com/creator/manual/zh/release-notes/raw-asset-migration.html" rel="external nofollow noopener noreferrer" target="_blank">v1. 10リソースアップグレードガイド</a>を参照してください。</p>
-<p><strong>エディタ</strong><br>
-textureのpremultiply alpha、filter mode、wrap mode構成を実装<br>
-カスタムエンジンは、メニューの「開発者オプション」-&gt;「コンパイルエンジン」を使用するだけで数秒で簡単にコンパイルできます。</p>
-<p><strong>エンジン</strong><br>
-レンダリングツリーを完全に削除する<br>
-3d rendererベースの新しいレンダラーを追加する<br>
-レンダリングコンポーネントの完全なアップグレード<br>
-cameraアセンブリのアップグレード<br>
-カスタムレンダリングコンポーネント機能を追加する(ドキュメントは公開されていません。公式リリースより前に公開されています)<br>
-rendertextureリソースタイプが正式に追加されました。rendertextureを使用してスクリーンキャストを完了する方法については、example casesのrender _ to _ canvasおよびrender _ to _ spriteテストケースを参照してください。</p>
-<p><strong>削除・廃止</strong><br>
-v1. xの多数の非公開APIおよび非コアAPIは削除または破棄され、詳細は<a href="https://gigthub.com/cocos-creator/engine/blob/next/cocos2d/deprecated.js" rel="external nofollow noopener noreferrer" target="_blank">deprecated.js</a>を参照してください。</p>
-<h2 id="パフォーマンスとフレームワーク"><a class="markdownIt-Anchor" href="#パフォーマンスとフレームワーク"></a> <strong>パフォーマンスとフレームワーク</strong></h2>
-<p><strong>性能の進化</strong><br>
-v2. 0以降では、v1.8.2( v1. x以降のバージョンではパフォーマンスの最適化なし)とv2. 0のパフォーマンスを比較したベンチマークを作成しました。<br>
-<img src="/2018/06/10/cocos-creator-v2-preview/1.jpg" alt="パフォーマンスの比較"></p>
-<p><strong>フレームワークの進化</strong><br>
-v2. 0のシンプルな2つのアーキテクチャ図とv1. xとの比較をご紹介します。<br>
-<img src="/2018/06/10/Cocos-Creator-v2-Preview/2.jpg" alt="1.x ノードツリー"><br>
-<img src="/2018/06/10/Cocos-Creator-v2-Preview/3.jpg" alt="2.0 ノードツリー"><br>
-<img src="/2018/06/10/Cocos-Creator-v2-Preview/4.jpg" alt="2.0 レンダリングフレーム"></p>
-
+        
+          <a class="article-more-a" href="/2018/06/10/Cocos-Creator-v2-Preview.html#more">もっと >></a>
+        
       
 
       
@@ -462,47 +406,11 @@ v2. 0のシンプルな2つのアーキテクチャ図とv1. xとの比較をご
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Cocos</a>
+                <a href="javascript:void(0)" class="js-tag color5">ニュース</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">プラグイン</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">無料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ドメイン</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">プロジェクト</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">経験</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">クラウド共有</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Sudoku</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">共有</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">ソフトウェア</a>
+                <a href="javascript:void(0)" class="js-tag color4">Cocos Creator</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -514,15 +422,51 @@ v2. 0のシンプルな2つのアーキテクチャ図とv1. xとの比較をご
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Cocos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">無料</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">経験</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">プラグイン</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ドメイン</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">プロジェクト</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">クラウド共有</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">共有</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">ソフトウェア</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Sudoku</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Unity</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ニュース</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Cocos Creator</a>
               </li>
             
             <div class="clearfix"></div>

@@ -218,6 +218,116 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-chrome-extension-and-npm-error" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+
+    <h1 itemprop="name">
+      
+      <a class="article-title" href="/2018/06/15/chrome-extension-and-npm-error.html">
+        <img src="/2018/06/15/chrome-extension-and-npm-error/featured.png">
+      </a>
+      
+      <a class="article-title" href="/2018/06/15/chrome-extension-and-npm-error.html">
+        chromeの非公式プラグインインストールとNPMティーポットエラー処理
+      </a>
+    </h1>
+ 
+
+
+        
+        <a href="/2018/06/15/chrome-extension-and-npm-error.html" class="archive-article-date">
+  	<time datetime="2018-06-15T02:56:16.667Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-15</time>
+</a>
+        
+          <link rel="canonical" href="https://jp.gamekon.com/2018/06/15/chrome-extension-and-npm-error.html">
+          <meta name="robots" content="all">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>最近の作業では、2つの小さな問題が発生しました。1つは、最新バージョンのchromeが公式ではないエクステンションをインストールした後に、そのエクステンションを閉じるように求めるプロンプトが表示されることです。 2つ目は、NPMインストーラが「error 418 I ’ m a teaapot」エラーを突然表示することです。 私はいくつかの実践を経て、この二つの問題を解決したが、ついでにその解決過程を記録しておく。</p>
+</blockquote>
+<h2 id="chromeの非公式エクステンションのインストール"><a class="markdownIt-Anchor" href="#chromeの非公式エクステンションのインストール"></a> <strong>chromeの非公式エクステンションのインストール</strong></h2>
+<ol>
+<li>chrome://extensions/ エクステンションのリストを開き、上の「開発者モード」チェックボックスをオンにして、crxファイルをドラッグしてエクステンションをインストールし、プログラムidを記録すると、chromaはファイルを開かず、管理しないように求めるメッセージを表示します。</li>
+<li>ポリシーパッケージのダウンロード <a href="https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip" rel="external nofollow noopener noreferrer" target="_blank">https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip</a> 。</li>
+<li>圧縮されたwindows\admx\chrome.admxをc:\windows\policydefinitions；圧縮されたwindows\admx[公用語]\chrome.admlをc:\windows\policydefinitions[公用語]\chrome.adml。</li>
+<li>gpedit.mscローカルグループポリシーエディタ開く，ユーザープロファイルの展開- &gt;テンプレートの管理 -&gt; Google -&gt; Google Chrome -&gt; エクステンション，ダブルクリックして「拡張プログラムインストールホワイトリストの構成」を開きます。「有効」を選択して「表示…」をクリックし、先にメモした拡張プログラムidの値をリストに入力して「ok」をクリックします。</li>
+<li>chromeを再起動すると、無効になっている拡張機能が有効になっていることがわかります。</li>
+</ol>
+<h2 id="npm-error418-ティーポットエラー"><a class="markdownIt-Anchor" href="#npm-error418-ティーポットエラー"></a> <strong>npm error418 ティーポットエラー</strong></h2>
+<ol>
+<li>npm config list -l npm設定の確認。</li>
+<li>npm config delete proxy （http_proxy,https_prxy) すべてのプロキシ設定をクリア。</li>
+<li>npm 正常に戻る。</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/ブログ/" class="article-tag-list-link color4">ブログ</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/06/15/chrome-extension-and-npm-error.html">全文を広げる >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Cocos-Creator-v2-Preview" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -252,65 +362,9 @@
 <p>5月の最後の2時間にcocos creator v2. 0のリリースを準備しました。 楽しんで！ 興奮しました！<br>
 何が更新されたかについてです このようにしてもよい。 このようにしてもよい。 私は、変更が大きすぎるので、何から話しているか分からないと言うことしかできません。 一言で言えば、コンポーネント層APIが不変であることを保証するために、我々は底層を完全に書き換えたが、cocos creator v2. 0以降、cocos2d xのフレームワークから完全に再生され、古いcocosの影が見えなくなり、たとえば1.x時代のsgnodeが完全に見えなくなった。 現在、v2. 0を直接使用すると、多くの警告やエラーが発生します。通常、古いAPIを使用しているため、これらのAPIには詳細なエラーが表示されます。これらのAPIには、アップグレード方法や交換方法などが含まれています。すべてのエラー情報に注意してください。 アップグレードが完了すると、v2. 0のパフォーマンスが向上しているはずですが、実際にはv2. 0には多くの驚きが用意されています。 ここではまず申し訳ありませんが、テクニカルプレビューバージョンの準備が急がれているため、すべてのドキュメントを準備することはできません。これらの作業は、正式版がリリースされる前に完全に実行されるため、v2. 0の可能性を最大限に引き出すことができます。<br>
 最も重要なのは、プロジェクトをバックアップして、両手を制御できないようにしてください。</p>
-<h2 id="バージョンの更新"><a class="markdownIt-Anchor" href="#バージョンの更新"></a> <strong>バージョンの更新</strong></h2>
-<p>cocos creator v2.0.0 preview 4を更新: <a href="http://download.cocos.com/CocosCreator/beta/CocosCreator_v2.0.0-preview.4_20180608.dmg" rel="external nofollow noopener noreferrer" target="_blank">MACバージョンのダウンロード</a> | <a href="http://download.cocos.com/CocosCreator/beta/CocosCreator_v2.0.0-preview.4.7z" rel="external nofollow noopener noreferrer" target="_blank">windowsバージョンのダウンロード</a> (2018/6/8)</p>
-<ul>
-<li>[FEATURE] 新規ノードアルファカスケード</li>
-<li>[MODIF] 必要に応じてゲームの重力を検知</li>
-<li>[MODIF] editboxのプラットフォーム依存コードをプラットフォーム依存builtinモジュールに移動</li>
-<li>[FIX] 回復prefabがオフのときにシーンを回復することによるエラー</li>
-<li>[FIX] prefab内部のアニメーションを編集しているときに、別のprefabをダブルクリックして開くとハングアップする問題を修正します。</li>
-<li>[FIX] sprite fill typeがradialの場合にfill centerを編集できない問題を修正します。</li>
-<li>[FIX] 修正ノードanchorを修正した後、元に戻す修正による表示エラーを元に戻す</li>
-<li>[FIX] tilemapに空のlayerが含まれている場合にエラーとなる問題の修正</li>
-<li>[FIX] DOM関連コンポーネントイベントリスナによるメモリリークの問題の修正</li>
-<li>[FIX] maskコンポーネントの切り替えモードおよび再有効化時に発生する継続的なエラーの修復</li>
-<li>[FIX] 隣接するmaskが誤ってバッチ処理される問題を修正します。</li>
-<li>[FIX] active状態更新後のworldtransformエラーの修正</li>
-<li>[FIX] auto remove on finishによってパーティクルノードがエディタに表示されなくなる問題を修正します。</li>
-<li>[FIX] exampleエンジニアリングメインインタフェースのテストボタンの表示ブレを修正</li>
-<li>[FIX] editboxの表示残り問題を修正</li>
-<li>[FIX] 複数のレンダリングコンポーネントをノードの下に追加する際のエラーの問題を修正します。</li>
-<li>[FIX] bmfont labelの色が設定できない問題を修正する</li>
-<li>[FIX] labeloutline透明度がノードの透明度に影響されない問題の修正</li>
-<li>[FIX] アンドロメダゲームプラットフォームの重力感知イベントの修正</li>
-<li>[FIX] spriteコンポーネントslicedモードのレンダリング問題の修正</li>
-<li>[FIX] spriteコンポーネントgraystateが原因で発生するglwarningの問題の修正</li>
-<li>[FIX] preabを編集した後にシーンに戻ると、シーンが無効になる問題を修正します。</li>
-<li>[FIX] 画面の向きがデバイスの向きと異なる場合のacclerometerイベントの軸エラーの修正</li>
-<li>[FIX] ノードイベントのtargetとcurrenttargetの問題を修正する</li>
-</ul>
-<h2 id="関連リソース"><a class="markdownIt-Anchor" href="#関連リソース"></a> <strong>関連リソース</strong></h2>
-<p><a href="https://github.com/pandamicro/heartfelt" rel="external nofollow noopener noreferrer" target="_blank">Material 使用例</a></p>
-<h2 id="release-notes"><a class="markdownIt-Anchor" href="#release-notes"></a> <strong>RELEASE NOTES</strong></h2>
-<p><strong>プラットフォームのサポート</strong><br>
-Cocos Creator v2.0.0 Preview はテクノロジプレビュー版であり、現在はすべてのプラットフォームがサポートされていません。サポートされているプラットフォームを次に示します。</p>
-<p>Web（WebGL レンダリング）<br>
-Wechat ミニゲーム</p>
-<p><strong>リソースのアップグレード</strong><br>
-v2. 0はv1. 10のすべての変更を統合し、v1. 10は基本的なリソースタイプを再構築しました。ほとんどのプロジェクトは影響を受けませんが、一部のプロジェクトには警告が表示される場合があります。詳細については、<a href="http://docs.cocos.com/creator/manual/zh/release-notes/raw-asset-migration.html" rel="external nofollow noopener noreferrer" target="_blank">v1. 10リソースアップグレードガイド</a>を参照してください。</p>
-<p><strong>エディタ</strong><br>
-textureのpremultiply alpha、filter mode、wrap mode構成を実装<br>
-カスタムエンジンは、メニューの「開発者オプション」-&gt;「コンパイルエンジン」を使用するだけで数秒で簡単にコンパイルできます。</p>
-<p><strong>エンジン</strong><br>
-レンダリングツリーを完全に削除する<br>
-3d rendererベースの新しいレンダラーを追加する<br>
-レンダリングコンポーネントの完全なアップグレード<br>
-cameraアセンブリのアップグレード<br>
-カスタムレンダリングコンポーネント機能を追加する(ドキュメントは公開されていません。公式リリースより前に公開されています)<br>
-rendertextureリソースタイプが正式に追加されました。rendertextureを使用してスクリーンキャストを完了する方法については、example casesのrender _ to _ canvasおよびrender _ to _ spriteテストケースを参照してください。</p>
-<p><strong>削除・廃止</strong><br>
-v1. xの多数の非公開APIおよび非コアAPIは削除または破棄され、詳細は<a href="https://gigthub.com/cocos-creator/engine/blob/next/cocos2d/deprecated.js" rel="external nofollow noopener noreferrer" target="_blank">deprecated.js</a>を参照してください。</p>
-<h2 id="パフォーマンスとフレームワーク"><a class="markdownIt-Anchor" href="#パフォーマンスとフレームワーク"></a> <strong>パフォーマンスとフレームワーク</strong></h2>
-<p><strong>性能の進化</strong><br>
-v2. 0以降では、v1.8.2( v1. x以降のバージョンではパフォーマンスの最適化なし)とv2. 0のパフォーマンスを比較したベンチマークを作成しました。<br>
-<img src="/2018/06/10/cocos-creator-v2-preview/1.jpg" alt="パフォーマンスの比較"></p>
-<p><strong>フレームワークの進化</strong><br>
-v2. 0のシンプルな2つのアーキテクチャ図とv1. xとの比較をご紹介します。<br>
-<img src="/2018/06/10/Cocos-Creator-v2-Preview/2.jpg" alt="1.x ノードツリー"><br>
-<img src="/2018/06/10/Cocos-Creator-v2-Preview/3.jpg" alt="2.0 ノードツリー"><br>
-<img src="/2018/06/10/Cocos-Creator-v2-Preview/4.jpg" alt="2.0 レンダリングフレーム"></p>
-
+        
+          <a class="article-more-a" href="/2018/06/10/Cocos-Creator-v2-Preview.html#more">もっと >></a>
+        
       
 
       
@@ -998,11 +1052,11 @@ MACシステムの場合、対応するパスは <code>/Library/Application\ Sup
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ドメイン</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ドメイン</a>
         		</li>
       		
 		</ul>
@@ -1024,113 +1078,6 @@ MACシステムの場合、対応するパスは <code>/Library/Application\ Sup
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/04/14/lets-encrypt-ssl.html">全文を広げる >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-two-experiences-about-photoshop" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-
-    <h1 itemprop="name">
-      
-      <a class="article-title" href="/2018/04/12/two-experiences-about-photoshop.html">
-        <img src="/2018/04/12/two-experiences-about-photoshop/featured.jpg">
-      </a>
-      
-      <a class="article-title" href="/2018/04/12/two-experiences-about-photoshop.html">
-        Photoshopの2点の経験について
-      </a>
-    </h1>
- 
-
-
-        
-        <a href="/2018/04/12/two-experiences-about-photoshop.html" class="archive-article-date">
-  	<time datetime="2018-04-12T06:30:00.722Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-12</time>
-</a>
-        
-          <link rel="canonical" href="https://jp.gamekon.com/2018/04/12/two-experiences-about-photoshop.html">
-          <meta name="robots" content="all">
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<ul>
-<li><a href="https://helpx.adobe.com/photoshop/using/generate-assets-layers.html" rel="external nofollow noopener noreferrer" target="_blank">イメージ資産ジェネレーター</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></li>
-<li><a href="https://www.cherubicsoft.com/en/projects/sagethumbs" rel="external nofollow noopener noreferrer" target="_blank">psdサムネイルプレビュー</a><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
-</ul>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item">対応するadobe illustratorの機能は、export assets panelです。 <a href="#fnref1" class="footnote-backref">↩︎</a></li>
-<li id="fn2" class="footnote-item">sagethumbsをインストールする前に<a href="http://sourceforge.net/projects/ghostscript/files/AFPL%20Ghostscript/8.54/gs854w64.exe/download" rel="external nofollow noopener noreferrer" target="_blank">Ghostscript library</a>をインストールする;<br>
-sagethumbsをインストールした後、イメージ埋め込みサムネイル機能をオンにして、イメージファイルの最大サイズ( cache file max )の値を大きくします。<br>
-Photoshopでファイルを保存するときは、必ず“サムネイル”オプションをオンにしてください。<strong>その後</strong>で保存したPSDファイルにサムネイルが表示されます。 <a href="#fnref2" class="footnote-backref">↩︎</a></li>
-</ol>
-</section>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/ブログ/" class="article-tag-list-link color4">ブログ</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/12/two-experiences-about-photoshop.html">全文を広げる >></a>
         </p>
       
 
@@ -1249,47 +1196,11 @@ Photoshopでファイルを保存するときは、必ず“サムネイル”�
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Cocos</a>
+                <a href="javascript:void(0)" class="js-tag color5">ニュース</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">プラグイン</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">無料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ドメイン</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">プロジェクト</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">経験</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">クラウド共有</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Sudoku</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">共有</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">ソフトウェア</a>
+                <a href="javascript:void(0)" class="js-tag color4">Cocos Creator</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1301,15 +1212,51 @@ Photoshopでファイルを保存するときは、必ず“サムネイル”�
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Cocos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">無料</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">経験</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">プラグイン</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ドメイン</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">プロジェクト</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">クラウド共有</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">共有</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">ソフトウェア</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Sudoku</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Unity</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ニュース</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Cocos Creator</a>
               </li>
             
             <div class="clearfix"></div>

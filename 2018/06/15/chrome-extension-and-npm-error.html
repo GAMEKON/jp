@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://jp.gamekon.com">
-  <title>Archives: 2018/4 | ゲームコン</title>
+  <title>chromeの非公式プラグインインストールとNPMティーポットエラー処理 | ゲームコン</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="別のゲーム スタジオ と愛">
-<meta name="keywords" content="ゲーム">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ゲームコン">
-<meta property="og:url" content="https://jp.gamekon.com/archives/2018/04/page/2/index.html">
+  <meta name="description" content="最近の作業では、2つの小さな問題が発生しました。1つは、最新バージョンのchromeが公式ではないエクステンションをインストールした後に、そのエクステンションを閉じるように求めるプロンプトが表示されることです。 2つ目は、NPMインストーラが「error 418 I ’ m a teaapot」エラーを突然表示することです。 私はいくつかの実践を経て、この二つの問題を解決したが、ついでにその解決">
+<meta name="keywords" content="chrome extension,I&#39;m a teapot">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chromeの非公式プラグインインストールとNPMティーポットエラー処理">
+<meta property="og:url" content="https://jp.gamekon.com/2018/06/15/chrome-extension-and-npm-error.html">
 <meta property="og:site_name" content="ゲームコン">
-<meta property="og:description" content="別のゲーム スタジオ と愛">
+<meta property="og:description" content="最近の作業では、2つの小さな問題が発生しました。1つは、最新バージョンのchromeが公式ではないエクステンションをインストールした後に、そのエクステンションを閉じるように求めるプロンプトが表示されることです。 2つ目は、NPMインストーラが「error 418 I ’ m a teaapot」エラーを突然表示することです。 私はいくつかの実践を経て、この二つの問題を解決したが、ついでにその解決">
 <meta property="og:locale" content="jp">
+<meta property="og:updated_time" content="2018-06-15T03:05:48.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ゲームコン">
-<meta name="twitter:description" content="別のゲーム スタジオ と愛">
+<meta name="twitter:title" content="chromeの非公式プラグインインストールとNPMティーポットエラー処理">
+<meta name="twitter:description" content="最近の作業では、2つの小さな問題が発生しました。1つは、最新バージョンのchromeが公式ではないエクステンションをインストールした後に、そのエクステンションを閉じるように求めるプロンプトが表示されることです。 2つ目は、NPMインストーラが「error 418 I ’ m a teaapot」エラーを突然表示することです。 私はいくつかの実践を経て、この二つの問題を解決したが、ついでにその解決">
   
     <link rel="alternative" href="/atom.xml" title="ゲームコン" type="application/atom+xml">
   
@@ -216,9 +217,7 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-cocos-domain-on-sale" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+            <article id="post-chrome-extension-and-npm-error" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -226,332 +225,46 @@
 
     <h1 itemprop="name">
       
-      <a class="article-title" href="/2018/04/04/cocos-domain-on-sale.html">
-        ドメインの販売cocosgames.com
+      <a class="article-title" href="/2018/06/15/chrome-extension-and-npm-error.html">
+        <img src="/2018/06/15/chrome-extension-and-npm-error/featured.png">
+      </a>
+      
+      <a class="article-title" href="/2018/06/15/chrome-extension-and-npm-error.html">
+        chromeの非公式プラグインインストールとNPMティーポットエラー処理
       </a>
     </h1>
  
 
 
         
-        <a href="/2018/04/04/cocos-domain-on-sale.html" class="archive-article-date">
-  	<time datetime="2018-04-04T02:18:51.467Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
+        <a href="/2018/06/15/chrome-extension-and-npm-error.html" class="archive-article-date">
+  	<time datetime="2018-06-15T02:56:16.667Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-15</time>
 </a>
         
-          <link rel="canonical" href="https://jp.gamekon.com/2018/04/04/cocos-domain-on-sale.html">
-          <meta name="robots" content="all">
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="スタジオでの資金不足のため-ドメイン名の名前で販売された-cocosgamescom"><a class="markdownIt-Anchor" href="#スタジオでの資金不足のため-ドメイン名の名前で販売された-cocosgamescom"></a> <strong>スタジオでの資金不足のため、ドメイン名の名前で販売された <a href="http://cocosgames.com" rel="external nofollow noopener noreferrer" target="_blank">cocosgames.com</a>。</strong></h3>
-<h3 id="需要者はここで購入してください"><a class="markdownIt-Anchor" href="#需要者はここで購入してください"></a> <strong>需要者は<a href="https://www.paypal.me/gamekon/99999jpy" rel="external nofollow noopener noreferrer" target="_blank">ここ</a>で購入してください。</strong></h3>
-<h3 id="そして-supportgamekoncomを連絡し-ドメイン名の情報を変更します"><a class="markdownIt-Anchor" href="#そして-supportgamekoncomを連絡し-ドメイン名の情報を変更します"></a> <strong>そして、support@gamekon.comを連絡し、ドメイン名の情報を変更します。</strong></h3>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Cocos</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ドメイン</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/製品/" class="article-tag-list-link color3">製品</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/04/cocos-domain-on-sale.html">全文を広げる >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hue-Saturation-Lightness-Shader-For-Cocos-Creator" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-
-    <h1 itemprop="name">
-      
-      <a class="article-title" href="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html">
-        <img src="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator/hsl_icon.png">
-      </a>
-      
-      <a class="article-title" href="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html">
-        Cocos Creatorの色相、明度、彩度プラグイン
-      </a>
-    </h1>
- 
-
-
-        
-        <a href="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html" class="archive-article-date">
-  	<time datetime="2018-04-03T11:14:28.931Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
-</a>
-        
-          <link rel="canonical" href="https://jp.gamekon.com/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html">
-          <meta name="robots" content="all">
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator/hsl_preview.png" alt="hsl_preview" title="Cocos Creatorの色相、明度、彩度プラグイン"></p>
-        
-          <a class="article-more-a" href="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html#more">もっと >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Cocos</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">プラグイン</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/製品/" class="article-tag-list-link color3">製品</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/03/Hue-Saturation-Lightness-Shader-For-Cocos-Creator.html">全文を広げる >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-another-way-to-encrypt-images" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-
-    <h1 itemprop="name">
-      
-      <a class="article-title" href="/2018/04/03/another-way-to-encrypt-images.html">
-        <img src="/2018/04/03/another-way-to-encrypt-images/featured.jpg">
-      </a>
-      
-      <a class="article-title" href="/2018/04/03/another-way-to-encrypt-images.html">
-        イメージ暗号化のもう一つのアイデア
-      </a>
-    </h1>
- 
-
-
-        
-        <a href="/2018/04/03/another-way-to-encrypt-images.html" class="archive-article-date">
-  	<time datetime="2018-04-03T05:08:11.046Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
-</a>
-        
-          <link rel="canonical" href="https://jp.gamekon.com/2018/04/03/another-way-to-encrypt-images.html">
+          <link rel="canonical" href="https://jp.gamekon.com/2018/06/15/chrome-extension-and-npm-error.html">
           <meta name="robots" content="all">
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>数千マイルは一歩から始まります。</p>
+<p>最近の作業では、2つの小さな問題が発生しました。1つは、最新バージョンのchromeが公式ではないエクステンションをインストールした後に、そのエクステンションを閉じるように求めるプロンプトが表示されることです。 2つ目は、NPMインストーラが「error 418 I ’ m a teaapot」エラーを突然表示することです。 私はいくつかの実践を経て、この二つの問題を解決したが、ついでにその解決過程を記録しておく。</p>
 </blockquote>
-<p>先日、大病気になってから帰ってきて、専门と関连の技术を见てみて、変化がとても大きかった。技术の更新は、日新月异で、技术を大幅にアップグレードしている。<br>
-ハードディスクを整理するときは、unityで作った多くの小研究項目をまとめてみた。例えば、どのように暗号化されたデータは、実行時に改竄されているか、例えば、この文章が議論する「ピクチャ暗号化の別のアプローチ」のように、どのように暗号化された文字列を用いて、広告主idの番号を保護するかのことである。</p>
-        
-          <a class="article-more-a" href="/2018/04/03/another-way-to-encrypt-images.html#more">もっと >></a>
-        
-      
+<h2 id="chromeの非公式エクステンションのインストール"><a class="markdownIt-Anchor" href="#chromeの非公式エクステンションのインストール"></a> <strong>chromeの非公式エクステンションのインストール</strong></h2>
+<ol>
+<li>chrome://extensions/ エクステンションのリストを開き、上の「開発者モード」チェックボックスをオンにして、crxファイルをドラッグしてエクステンションをインストールし、プログラムidを記録すると、chromaはファイルを開かず、管理しないように求めるメッセージを表示します。</li>
+<li>ポリシーパッケージのダウンロード <a href="https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip" rel="external nofollow noopener noreferrer" target="_blank">https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip</a> 。</li>
+<li>圧縮されたwindows\admx\chrome.admxをc:\windows\policydefinitions；圧縮されたwindows\admx[公用語]\chrome.admlをc:\windows\policydefinitions[公用語]\chrome.adml。</li>
+<li>gpedit.mscローカルグループポリシーエディタ開く，ユーザープロファイルの展開- &gt;テンプレートの管理 -&gt; Google -&gt; Google Chrome -&gt; エクステンション，ダブルクリックして「拡張プログラムインストールホワイトリストの構成」を開きます。「有効」を選択して「表示…」をクリックし、先にメモした拡張プログラムidの値をリストに入力して「ok」をクリックします。</li>
+<li>chromeを再起動すると、無効になっている拡張機能が有効になっていることがわかります。</li>
+</ol>
+<h2 id="npm-error418-ティーポットエラー"><a class="markdownIt-Anchor" href="#npm-error418-ティーポットエラー"></a> <strong>npm error418 ティーポットエラー</strong></h2>
+<ol>
+<li>npm config list -l npm設定の確認。</li>
+<li>npm config delete proxy （http_proxy,https_prxy) すべてのプロキシ設定をクリア。</li>
+<li>npm 正常に戻る。</li>
+</ol>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Unity</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/ブログ/" class="article-tag-list-link color4">ブログ</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/03/another-way-to-encrypt-images.html">全文を広げる >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-webstorm-bitbucket-git-with-lfs-for-your-project" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-
-    <h1 itemprop="name">
-      
-      <a class="article-title" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">
-        <img src="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project/featured.jpg">
-      </a>
-      
-      <a class="article-title" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">
-        webstorm+bitbucket+git(lfs)を使用して開発環境を作る
-      </a>
-    </h1>
- 
-
-
-        
-        <a href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html" class="archive-article-date">
-  	<time datetime="2018-04-01T09:56:40.394Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-01</time>
-</a>
-        
-          <link rel="canonical" href="https://jp.gamekon.com/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">
-          <meta name="robots" content="all">
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>その事を、漉しなど。</p>
-</blockquote>
-<p>貧しい個人のゲーム開発者として、どのように作業効率を向上させることが、プロジェクトの成功の鍵となりました。 この記事では、さまざまなソフトウェアを使用して自分の開発環境を構築する方法について説明します。<br>
-私の現在のオペレーティングシステムはWindows 10 Professionalで、他のシステムはほとんど同じです。</p>
-        
-          <a class="article-more-a" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html#more">もっと >></a>
-        
       
 
       
@@ -583,16 +296,24 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">全文を広げる >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/10/Cocos-Creator-v2-Preview.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Cocos Creator v2.0.0 Preview 発行する</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -612,13 +333,32 @@
 
 
 
+  
+  
+  
 
   
+
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2018/04/">&laquo; Prev</a><a class="page-number" href="/archives/2018/04/">1</a><span class="page-number current">2</span>
-    </nav>
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'gemukon'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="external nofollow noopener noreferrer" target="_blank">comments powered by Disqus.</a></noscript>
+    </section>
   
+
+  
+
 
           </div>
         </div>
@@ -640,8 +380,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
