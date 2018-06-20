@@ -220,6 +220,111 @@
 
 
   
+    <article id="post-install-old-plugin-into-new-ps" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+
+    <h1 itemprop="name">
+      
+      <a class="article-title" href="/2018/04/17/install-old-plugin-into-new-ps.html">
+        <img src="/2018/04/17/install-old-plugin-into-new-ps/featured.jpg">
+      </a>
+      
+      <a class="article-title" href="/2018/04/17/install-old-plugin-into-new-ps.html">
+        新しいPhotoshopへの古いプラグインのインストール
+      </a>
+    </h1>
+ 
+
+
+        
+        <a href="/2018/04/17/install-old-plugin-into-new-ps.html" class="archive-article-date">
+  	<time datetime="2018-04-17T09:21:33.083Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-17</time>
+</a>
+        
+          <link rel="canonical" href="https://jp.gamekon.com/2018/04/17/install-old-plugin-into-new-ps.html">
+          <meta name="robots" content="all">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>古いプラグインを使用する必要がある場合、Photoshopの最新バージョンがインストールをサポートしていないことがあります😞。この記事では、新しいPhotoshopへの古いプラグインのインストールについて説明します。</p>
+</blockquote>
+<hr>
+<p>例えば、必要なプラグイン <code>plugin.zxp</code> があります，Photoshopのバージョンは、cc 2018の最新バージョンです。これを以前の方法でインストールすることはできませんが、どうすればよいでしょうか？<br>
+実際にはzxpはzip形式の圧縮ファイルです，winrarで解凍するとディレクトリが得られます。このフォルダを <code>C:\Users\%username%\AppData\Roaming\Adobe\CEP\extensions\</code> に移動しますいいですよ。<br>
+MACシステムの場合、対応するパスは <code>/Library/Application\ Support/Adobe/CEP/extensions/</code> 。</p>
+<p>Photoshopのプラグインを開くことはできません，署名が承認されないというエラーが発生します。<br>
+解決策はを開くregedit，<code>HKEY_CURRENT_USER/Software/Adobe/</code> を選択します <code>CSXS.7</code> または <code>CSXS.8</code> など，ディレクトリの下に新しい文字列キーを作成 <code>PlayerDebugMode</code> 値 <code>1</code> 。</p>
+<p>Photoshopを開くと、インストールされているプラグインが拡展ウィンドウに表示されます。</p>
+<p>さあ、仕事を続けましょう！😊</p>
+<p><img src="/2018/04/17/install-old-plugin-into-new-ps/map.png" alt="map"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/ブログ/" class="article-tag-list-link color4">ブログ</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/17/install-old-plugin-into-new-ps.html">全文を広げる >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-happy-magic-01" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -425,11 +530,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ドメイン</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ドメイン</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
         		</li>
       		
 		</ul>
@@ -984,109 +1089,9 @@ Photoshopでファイルを保存するときは、必ず“サムネイル”�
 
 
   
-    <article id="post-webstorm-bitbucket-git-with-lfs-for-your-project" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-
-    <h1 itemprop="name">
-      
-      <a class="article-title" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">
-        <img src="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project/featured.jpg">
-      </a>
-      
-      <a class="article-title" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">
-        webstorm+bitbucket+git(lfs)を使用して開発環境を作る
-      </a>
-    </h1>
- 
-
-
-        
-        <a href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html" class="archive-article-date">
-  	<time datetime="2018-04-01T09:56:40.394Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-01</time>
-</a>
-        
-          <link rel="canonical" href="https://jp.gamekon.com/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">
-          <meta name="robots" content="all">
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>その事を、漉しなど。</p>
-</blockquote>
-<p>貧しい個人のゲーム開発者として、どのように作業効率を向上させることが、プロジェクトの成功の鍵となりました。 この記事では、さまざまなソフトウェアを使用して自分の開発環境を構築する方法について説明します。<br>
-私の現在のオペレーティングシステムはWindows 10 Professionalで、他のシステムはほとんど同じです。</p>
-        
-          <a class="article-more-a" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html#more">もっと >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">経験</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/ブログ/" class="article-tag-list-link color4">ブログ</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/01/webstorm-bitbucket-git-with-lfs-for-your-project.html">全文を広げる >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -1194,19 +1199,23 @@ Photoshopでファイルを保存するときは、必ず“サムネイル”�
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">無料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">経験</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">プラグイン</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">無料</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">ドメイン</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">経験</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1218,7 +1227,11 @@ Photoshopでファイルを保存するときは、必ず“サムネイル”�
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+                <a href="javascript:void(0)" class="js-tag color1">Unity</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Sudoku</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1227,14 +1240,6 @@ Photoshopでファイルを保存するときは、必ず“サムネイル”�
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">ソフトウェア</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Sudoku</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Unity</a>
               </li>
             
             <div class="clearfix"></div>

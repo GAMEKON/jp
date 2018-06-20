@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jp.gamekon.com/"/>
-  <updated>2018-06-15T03:05:48.892Z</updated>
+  <updated>2018-06-20T03:25:37.822Z</updated>
   <id>https://jp.gamekon.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ドメインの販売unityboy.com</title>
+    <link href="https://jp.gamekon.com/2018/06/20/unity-domain-on-sale.html"/>
+    <id>https://jp.gamekon.com/2018/06/20/unity-domain-on-sale.html</id>
+    <published>2018-06-20T03:22:33.857Z</published>
+    <updated>2018-06-20T03:25:37.822Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="スタジオでの資金不足のため-ドメイン名の名前で販売された-unityboycom"><a class="markdownIt-Anchor" href="#スタジオでの資金不足のため-ドメイン名の名前で販売された-unityboycom"></a> <strong>スタジオでの資金不足のため、ドメイン名の名前で販売された <a href="http://unityboy.com" rel="external nofollow noopener noreferrer" target="_blank">unityboy.com</a>。</strong></h3><h3 id="需要者はここで購入してください"><a class="markdownIt-Anchor" href="#需要者はここで購入してください"></a> <strong>需要者は<a href="https://www.paypal.me/gamekon/99999jpy" rel="external nofollow noopener noreferrer" target="_blank">ここ</a>で購入してください。</strong></h3><h3 id="または-取引を議論するために-supportgamekoncom-に連絡してください"><a class="markdownIt-Anchor" href="#または-取引を議論するために-supportgamekoncom-に連絡してください"></a> <strong>または、取引を議論するために <a href="mailto:support@gamekon.com" rel="external nofollow noopener noreferrer" target="_blank">support@gamekon.com</a> に連絡してください。</strong></h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;スタジオでの資金不足のため-ドメイン名の名前で販売された-unityboycom&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#スタジオでの資金不足のため-ドメイン名の名前で販売された-unityboycom&quot;&gt;&lt;/a&gt; &lt;strong
+      
+    
+    </summary>
+    
+      <category term="製品" scheme="https://jp.gamekon.com/categories/%E8%A3%BD%E5%93%81/"/>
+    
+    
+      <category term="ドメイン" scheme="https://jp.gamekon.com/tags/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/"/>
+    
+      <category term="Unity" scheme="https://jp.gamekon.com/tags/Unity/"/>
+    
+  </entry>
   
   <entry>
     <title>chromeの非公式プラグインインストールとNPMティーポットエラー処理</title>
@@ -306,9 +333,9 @@
       <category term="ブログ" scheme="https://jp.gamekon.com/categories/%E3%83%96%E3%83%AD%E3%82%B0/"/>
     
     
-      <category term="経験" scheme="https://jp.gamekon.com/tags/%E7%B5%8C%E9%A8%93/"/>
-    
       <category term="ドメイン" scheme="https://jp.gamekon.com/tags/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/"/>
+    
+      <category term="経験" scheme="https://jp.gamekon.com/tags/%E7%B5%8C%E9%A8%93/"/>
     
   </entry>
   
